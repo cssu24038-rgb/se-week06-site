@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>ポートフォリオ</title>
     <style>
         :root {
             --bg-color: #f8f9fa;
@@ -125,20 +125,6 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .skill-card {
-            background-color: var(--card-bg);
-            padding: 25px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
         .works-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -182,20 +168,6 @@
             font-size: 0.85rem;
             color: var(--secondary-text);
             margin-bottom: 12px;
-        }
-
-        .work-tags {
-            display: flex;
-            gap: 5px;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            font-size: 0.75rem;
-            background-color: var(--bg-color);
-            padding: 2px 8px;
-            border-radius: 4px;
-            border: 1px solid var(--border-color);
         }
 
         .reflection-content {
@@ -243,10 +215,10 @@
             <div class="logo">My Portfolio</div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#reflection">Reflection</a></li>
+                    <li><a href="#about">自己紹介</a></li>
+                    <li><a href="#skills">スキル</a></li>
+                    <li><a href="#works">活動</a></li>
+                    <li><a href="#reflection">振り返り</a></li>
                     <li><button class="theme-toggle" id="themeToggle" aria-label="テーマ切り替え">Dark</button></li>
                 </ul>
             </nav>
@@ -262,9 +234,8 @@
 
             <section id="skills">
                 <h2>スキル</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">日本語会話能力</div>
-/
+                <div class="profile-box">
+                    <p>日本語会話能力</p>
                 </div>
             </section>
 
@@ -276,9 +247,8 @@
                         <div class="work-info">
                             <div>
                                 <h3 class="work-title">二酸化炭素の生成</h3>
-                                <p class="work-desc">人間としての活動の一環で二酸化炭素の生成を行っています。</p>
+                                <p class="work-desc">人間としての活動の一慢で二酸化炭素の生成を行っています。</p>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -290,7 +260,7 @@
                     <p><strong>これまでを振り返って：</strong><br>
                     いままでただ生きているだけで、社会に対しこれといった貢献をしてきませんでした。また、自分勝手に生きており、周りに迷惑をかけて生きていました。</p>
                     <p><strong>今後の課題と展望：</strong><br>
-                    人生のこり短いですが、いままでの自堕落な生活を見直し、小さいことでも社会に貢献できる</p>
+                    人生こり短いですが、いままでの自堕落な生活を見直し、小さいことでも社会に貢献できる</p>
                 </div>
             </section>
         </main>
@@ -342,7 +312,6 @@
                         behavior: 'smooth'
                     });
                 }
-                
             });
         });
     </script>
